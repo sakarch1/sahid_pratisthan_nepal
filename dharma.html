@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahid Pratisthan Nepal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .contain h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2A8CBFff;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            border-radius: 8px;
+        }
+
+        .conten {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .conten p {
+            margin: 0;
+            padding: 4px 0;
+            font-weight: normal;
+            font-size: 18px;
+        }
+
+        .boox {
+            background: #ffffff;
+            margin: 0 auto;
+        }
+
+        strong {
+            color: #2A8CBFff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="navbar-top text-white py-2">
+            <div class="container d-flex justify-content-between">
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i>&nbsp;+९७७ १ ५१७२७०९&nbsp; &nbsp;
+                    <i class="fas fa-envelope"></i>&nbsp;sahidpratisthan@gmail.com
+                </div>
+                <div class="date">
+                    <span>Established in 2067 with afflication from CTEVT</span>
+                </div>
+                <div>
+                    <a href="#" class="text-white ml-3">English</a> &nbsp;&nbsp;
+                    <a href="#" class="text-white ml-3">नेपाली</a>&nbsp;&nbsp;
+                    <a href="#" class="text-white ml-3">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-middle bg-white text-center py-2">
+            <div class="container d-flex justify-content-between">
+                <img src="assets/flag.jpg" alt="Flag" class="navbar-flag">
+                <div class="ml-3">
+                    <h2 style="color: #2A8CBFff;">सहिद प्रतिष्ठान नेपाल</h2>
+                    <p class="mt-2 " style="color: #2A8CBFff;">कोटेश्वर-३२, काठमाण्डौं</p>
+                </div>
+                <div class="ml-3">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar section -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #2A8CBFff;">
+            <div class="container" style="padding-left: 100px;">
+                <button class="navbar-toggler" onclick="toggleMenu()" type="button" data-toggle="collapse"
+                    data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto text-center menu">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">संगठनात्मक संरचना</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sakha.html">शाखा</a></li>
+                                <li><a class="dropdown-item" href="sthaniya-taha.html">स्थानिय तह शाखा</a></li>
+                                <li><a class="dropdown-item" href="kendriya-taha.html">केन्द्रीय कार्यसमिति शाखा</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown">सदस्य</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sadharan-member.html">साधारण सदस्य</a></li>
+                                <li><a class="dropdown-item" href="member.html">आजीवन सदस्य</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="dastavej.html">दस्तावेज</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown">गतिविधि</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="martyrs.html">सहिद विवरण</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown">विद्यालय</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="school1.html">विद्यालय १</a></li>
+                                <li><a class="dropdown-item" href="school2.html">विद्यालय २</a></li>
+                                <li><a class="dropdown-item" href="school3.html">विद्यालय ३</a></li>
+                                <li><a class="dropdown-item" href="school4.html">विद्यालय ४</a></li>
+                                <li><a class="dropdown-item" href="school5.html">विद्यालय ५</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown">मल्टिमिडिया</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gallery.html">फोटो ग्यालरी</a></li>
+                                <li><a class="dropdown-item" href="video.html">भिडियो ग्यालरी</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown">सूचना पाटी</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aboutus.html">हाम्रो बारेमा</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">सम्पर्क</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contain mt-5">
+        <div class="text-center mb-5">
+            <h1>धर्मभक्त आचार्य</h1>
+        </div>
+        <div class="about-image">
+            <img src="assets/martyr1.jpg" alt="Martyr Image" width="200"
+                style="margin-left: 540px; margin-bottom: 30px;">
+        </div>
+        <div class="paragraph" style="font-size: 17px; margin-left: 95px; margin-bottom: 50px;">
+            <p>धर्मभक्त माथेमा नेपाल प्रजा परिषद्को संस्थापक सदस्य तथा एक व्यवसायिक शारिरीक सुगठन बडीबिल्डर थिए। उनले
+                नेपालमा आधुनिक शारीरिक शारिरीक सुगठनको <br> सुरुवात गराए । उनलाई राणाको एकतन्त्री शासन विरुद्ध को
+                स्वतन्त्रता को लागि चिनिन्छ। उनी १९९७ मा पक्राउ परे र माघ १३ मा मृत्युदण्ड दिइयो र चार शहिद मध्ये एक <br>
+                को रुपमा उनलाई सम्मान गरिन्छ। धर्मभक्त माथेमाको जन्म पिता सुब्बा आदिभक्त माथेमा र माता चन्द्रकुमारी
+                देवीको कोखबाट वि.सं. १९६६ असोज ९
+                गते काठमाडौंको <br> ओमबहाल नवहिलमा भएको थियो। बुबा आदिभक्त राणाहरूका लागि भारतबाट सामान ल्याउनुहुन्थ्यो।
+                त्यही कारणले धर्मभक्तले दार्जीलिङमा शिक्षा आर्जन गर्नुभयो। <br> केही समय कलकत्तामा पनि पढनुभयो। शरीर दुब्लो
+                भएकाले व्यायाम गर्न थाले । बङ्गालको शारीरिक व्यायामशालाबाट उनी बङ्गाल च्याम्पीयन भएर नाम कमाए।
+                बङ्गाल <br>
+                अङ्ग्रेजकै पालाबाट राजनीतिक चेतना भएको ठाउँ थियो । त्यहीँबाट उनलाई राजनीतिको ज्ञान मिल्यो। उनको
+                सम्पर्क
+                बङ्गाली नेता चित्तरन्जन दाससँग भयो। केही समयपछि <br> उहाँका बुबालाई राणा प्रधानमन्त्री जुद्ध शमशेरले
+                निर्वासित गरिदिए। वि.सं. १९९० मा धर्मभक्त माथेमाको उत्तरादेवीसँग वैवाहिक सम्बन्ध कायम भयो र उहाँले
+                भारतको स्कटिस <br> चर्च कलेजबाट आई.ए. उत्तीर्ण गरेका थिए ।
+            </p>
+            <p>नेपाल प्रजा परिषद्को स्थापना
+                वि.सं. १९९० सालमा दशरथ चन्दसँग धर्मभक्तको भेट भयो। पछि चन्द पनि नेपाल प्रजापरिषद्को संस्थापक सदस्य
+                हुनुभयो। उहाँले घोडेजात्रामा <br> टुँडीखेलमा शारीरिक तन्दुरुस्ती र व्यायामको प्रदर्शनी गर्दा राजा त्रिभुवन
+                ज्यादै प्रभावित होइबक्स्यो। उहाँ स्व.राजा त्रिभुवनका व्यायाम शिक्षक हुनुभयो। उहाँले १९९३ सालमा <br> आफ्नै
+                फुपूको घरमा नेपाल प्रजापरिषद्को स्थापना गर्नुभएको थियो। प्रजापरिषद् र राजा त्रिभुवनका बीचमा उहाँबाटै
+                सम्पर्क भयो । लैनचौरमा राजा र प्रजापरिषद्बीच भएको <br> सम्पर्क राणाहरूले चाल पाए। धर्मभक्तलाई पक्राउ गरियो।
+                वि.सं. १९९७ माघ १३ गते उहाँलाई सिफलमा फाँसी दिइयो । <br>
+                <br>
+
+                <strong>पक्राउ</strong> <br>
+                ‘नेपाल प्रजा परिषद्‌’ले काठमाडौं उपत्यकामा १९९७ को ९ असार, ३० असार, १७ साउन र २४ भदौमा राणाविरोधी पर्चा
+                छर्‍यो । राणाहरूले गरेको अत्याचार र त्यसविरुद्ध वगावत गर्न <br>छरिएका यी पर्चा शहरभरि पुग्यो ।
+
+                राणाहरूले आफूविरुद्ध पर्चा छर्ने प्रजा परिषद्‌का सदस्यको खोजी तीव्र पारे । २ कात्तिक १९९७ मा प्रजा
+                परिषद्‌ सदस्य धर्मभक्त माथेमा पक्राउ परे। त्यसपछि प्रजापरिषद्‌का सबैजसो सदस्य पक्राउ परे ।
+
+                पक्राउ परेकालाई सिंहदरबार (रेडियो नेपालको पुरानो भवन)मा राखियो । यहाँ उनीहरूमाथि चरम यातना दिइयो । यही <br>
+                यातनाका बीच पक्राउ परेकाहरूको बयान र अदालती प्रक्रिया सुरु गरियो । <br>
+                <br>
+
+                <strong>फाँसी</strong> <br>
+                पक्राउ गरेको तीन महिनापछि ६ माघ १९९७ मा फैसला सुनाइयो । फैसलाअनुसार शास्त्री, माथेमा, चन्द र श्रेष्ठलाई
+                मृत्युदण्ड र बाँकीलाई कैद तथा जन्मकैदको सजाय सुनाइयो । <br> ब्राह्मण भएका कारण टंकप्रसाद आचार्यलाई मृत्युदण्ड
+                दिइएन । वि.सं. १९९७ माघ १३ गते उहाँलाई सिफलमा फाँसी दिइयो ।
+
+                माघ १३ गते राति दस बजेतिर धर्मभक्तलाई सिफल <br>पुर्याइयो । दुवै हात पछाडि फर्काएर बाँधिएका धर्मभक्तलाई
+                नरसमसेरले अन्तिम इच्छा सोध्दा उनले जवाफ दिए—“राणशासनको छिट्टै अन्त्य भएर जनताले सुखशान्ति पाउन् भन्ने <br>
+                इच्छा छ” धर्मभक्तको यस्तो भनाइबाट रिसले मुर्मुरिएका नरसमसेरले हतारहतार फाँसीमा झुण्डयाउने आदेश दिए ।
+
+                रुखको हाँगामा डोरी बाँधेर डोरी तान्नासाथ हाँगा भाँचियो । <br> फेरी अर्को हाँगामा झुण्ड्याइयो । धर्मभक्तको
+                छटपटीले त्यो हाँगा पनि भाँचियो । यसरी हाँगा भाँचिएर दुइ पल्टसम्म फाँँसीबाट बँचेका धर्मभक्तको गाला
+                नरसमसेरले चक्कुद्धारा <br> चिरिदिए । बेस्सरी पिटे, सिपाहीहरुलाई पिट्न लगाए । धेरै बेरको पिटाईपछि उनी बेहोस भए
+                । अनि बेहोस भएकै बेला फेरी डोरीले घाँटी कसेर उनलाई रुखमा झुण्डयाइयो । <br> “संस्था खडा गरेर दुनियाँ भड्काउने
+                पर्चा छरेको र राजकाज समेत आफैँ चलाउने प्रयास गरेकोले यस्तो सजाय पायो ।” भन्ने लेखेर धर्मभक्तको छातीमा
+                टाँसिएको थियो । <br>
+
+                अर्को दिन बेलुकीसम्म रुखमा झुण्डिएको धर्मभक्तको शव हटाइएन । उनका पिता आदिभक्त र भाइ धुव्रभक्त पनि जेलमा
+                भएकाले अरु कोही आफन्त शव बुझ्न आएनन् । <br> चौविस घण्टापछि सरकारले नै उनको सद्गत गर्यो ।</p>
+        </div>
+        <div class="conten ms-4" style="text-align: center; margin-bottom: 150px; ">
+            <p><strong style="font-size: 18px;">शहादत मिति:</strong> माघ ११, १९९७</p>
+        </div>
+    </div>
+
+    <footer class="footer__section">
+        <div class="custom-container">
+            <nav class="footer__grid">
+                <!-- Left Section -->
+                <div class="footer__grid-nav">
+                    <a href="index.html" class="header-logo">
+                        <img src="assets/flag.jpg" class="header-logo__flag" alt="img" width="50">
+                        <span class="header-logo__name">
+                            शहीद प्रतिष्ठान नेपाल
+
+                        </span>
+                    </a>
+                    <ul class="about__details" style="margin-top: 30px;">
+
+                        <li>
+                            <p style="color: #fff;">कार्यालयः काठमाण्डौं महानगरपालिका -३२,
+                            </p>
+                        </li>
+                        <li>
+                            <p style="color: #fff;">महादेवस्थान मार्ग, कोटेश्वर, काठमाण्डौं, नेपाल
+                            </p>
+                        </li>
+                        <li>
+                            <p style="color: #fff;">फोन: <a href="tel:०१ ४६१२२९०"
+                                    style="text-decoration: none; color: rgb(255, 255, 255);"> +९७७ १ ५१७२७०९
+                                </a></p>
+                        </li>
+                        <li>
+                            <p style="color: #fff;">इमेल: <a href="mailto:apeksha.ghimire@softechfoundation.com"
+                                    style="text-decoration: none; color: rgb(255, 255, 255);">sahidpratisthan@gmail.com
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="color: #fff;">वेवसाईटः <a href="mailto:apeksha.ghimire@softechfoundation.com"
+                                    style="text-decoration: none; color: rgb(255, 255, 255);">
+                                    https://www.sahidpratisthan.org.np
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Middle Section -->
+                <div class="footer__grid-nav">
+                    <h3 class="menu__label" style="color: #fff;">QUICK LINKS</h3>
+                    <ul class="link__menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">संगठनात्मक संरचना</a></li>
+                        <li><a href="#">सदस्य</a></li>
+                        <li><a href="#">गतिविधि</a></li>
+                        <li><a href="#">मल्टिमिडिया</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+
+                <div class="footer__grid-nav">
+                    <h3 class="menu__label" style="color: #fff;">OTHER LINKS</h3>
+                    <ul class="link__menu">
+                        <li><a href="#">दस्तावेज</a></li>
+                        <li><a href="#">विद्यालय</a></li>
+                        <li><a href="#">सूचना पाटी</a></li>
+                        <li><a href="#">सम्पर्क</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

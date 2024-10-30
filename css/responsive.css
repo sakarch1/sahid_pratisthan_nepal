@@ -1,0 +1,210 @@
+/* General mobile styling */
+@media (max-width: 576px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .navbar {
+        height: 10vh;
+    }
+
+    .navbar-middle h2 {
+        font-size: 24px;
+    }
+
+    .navbar-middle img {
+        height: 80px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    .form-inline input {
+        width: 150px;
+    }
+
+    .btn-home,
+    .btn-apply {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .carousel-item {
+        height: 60vh;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .line-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .button-pradesh .btn-group .btn,
+    .button-container .btn-group .btn {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .footer__grid {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}
+
+/* Tablet styling */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar {
+        height: 8vh;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    /* Hide menu items initially */
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    /* Display menu items when active */
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-middle h2 {
+        font-size: 28px;
+    }
+
+    .navbar-middle img {
+        height: 100px;
+    }
+
+    .form-inline input {
+        width: 180px;
+    }
+
+    .btn-home,
+    .btn-apply {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+
+    .card {
+        max-width: 45%;
+    }
+
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    .line-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer__grid {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    #carouseltwo .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+
+}
+
+/* Larger tablet / smaller desktop styling */
+@media (min-width: 769px) and (max-width: 992px) {
+    .navbar-middle h2 {
+        font-size: 30px;
+    }
+
+    .form-inline input {
+        width: 200px;
+    }
+
+    .card {
+        max-width: 30%;
+    }
+
+    .carousel-item {
+        height: 75vh;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .line-container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/* Larger desktop styling */
+@media (min-width: 993px) {
+    .navbar-middle h2 {
+        font-size: 34px;
+    }
+
+    .form-inline input {
+        width: 250px;
+    }
+
+    .card {
+        max-width: 25%;
+    }
+
+    .carousel-item {
+        height: 80vh;
+    }
+
+    .line-container {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .footer__grid {
+        flex-direction: row;
+        margin-left: 80px;
+    }
+}
