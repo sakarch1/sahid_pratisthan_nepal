@@ -19,121 +19,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap"
         rel="stylesheet">
-    <style>
-        .ontainer h1 {
-            text-align: center;
-            padding-top: 10px;
-            padding-left: 50px;
-            font-size: 35px;
-            font-weight: 600;
-            color: #2A8CBFff;
-        }
 
-        .ontent-bottom {
-            border-top: 1px solid #444;
-            /* Divider */
-            padding-top: 10px;
-        }
-
-        .contact-card {
-            background-color: #e8eef2;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
-
-        .contact-card img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-        }
-
-        .contact-info h5 {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #a51020;
-        }
-
-        .contact-info p {
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-
-        .contact-info .phone-number {
-            font-weight: 400;
-        }
-
-        .yellow-section {
-            background-color: #a51020;
-            text-align: center;
-            padding: 10px;
-            height: 60px;
-        }
-
-        .yellow-section a {
-            color: #fff;
-            font-size: 18px;
-            padding-bottom: 40px;
-        }
-
-        .sidebar {
-            padding: 20px;
-            margin-left: 10px;
-        }
-
-        .welcome-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
-
-        .welcome-section h2 {
-            font-size: 1.75rem;
-            margin-bottom: 20px;
-            color: #2A8CBFff;
-            font-weight: 500;
-        }
-
-        .welcome-section p {
-            font-size: 1rem;
-            margin-bottom: 25px;
-            line-height: 1.6;
-            text-align: justify;
-        }
-
-        .welcome-section .btn {
-            margin-top: 20px;
-        }
-
-        /* Styling for the policies section */
-        .policies-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            margin-top: 80px;
-            margin-left: 30px;
-            color: #2A8CBFff;
-        }
-
-        .policies-section ul {
-            padding-left: 0;
-            margin-left: 30px;
-        }
-
-        .policies-section li {
-            margin-bottom: 10px;
-        }
-
-        .policy-link {
-            font-size: 1.1rem;
-            text-decoration: none;
-            color: #a51020;
-        }
-
-        .policy-link:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
@@ -247,107 +133,128 @@
         </nav>
     </header>
 
-    <section class="about my-5">
-        <div class="ontainer">
-            <div class="text-center">
-                <h1>विद्यालय १</h1>
+    <div class="line-container">
+
+        <div class="line"></div>
+
+        <div class="box">सप्तरी</div>
+        <!-- Line after the box -->
+        <div class="line"></div>
+    </div>
+
+    <div class="container my-5">
+
+        <!-- Navigation Tabs -->
+        <div class="button-container ms-5">
+            <div class="btn-group" role="group">
+                <a href="lahan.html" class="btn btn-outline-secondary">बोडेबरसैं नगरपालिका</a>
             </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <!-- School building image -->
-                    <div class="text-center my-4">
-                        <img src="assets/coursel1.jpg" style="margin-left: 15px;" alt="School Building"
-                            class="school-building img-fluid">
+            <div class="btn-group" role="group">
+                <a href="sirha.html" class="btn btn-outline-secondary">सिरहा नगरपालिका</a>
+            </div>
+            <div class="btn-group" role="group">
+                <a href="bishnupur.html" class="btn btn-outline-secondary">विष्णुपुर गाउँपालिका</a>
+            </div>
+            <div class="btn-group" role="group">
+                <a href="navrajpur.html" class="btn btn-outline-secondary">नवराजपुर गाउँपालिका</a>
+            </div>
+            <div class="btn-group" role="group">
+                <a href="arnama.html" class="btn btn-outline-secondary">अर्नामा गाउँपालिका</a>
+            </div>
+        </div>
+
+        <!-- News Cards -->
+        <div class="row" ms -5>
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news9.jpg" class="card-img" alt="Halesi Tuwachung Municipality">
+                    <div class="card-bod">
+                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
+                            आयोजना अधुरे
+                        </h5>
                     </div>
-                    <!-- Yellow section with buttons -->
-                    <div class="yellow-section">
-                        <a href="#" class="btn">Contact Information</a>
-                        <a href="#" class="btn">Profile</a>
-                        <a href="#" class="btn">Download</a>
-                        <a href="#" class="btn">Members</a>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="contact-card" style="height: 260px;">
-                        <img src="assets/martyr4.jpg" alt="Dinesh Thapa">
-                        <div class="contact-info">
-                            <h5>Dinesh Thapa</h5>
-                            <p>Vice-Principal</p>
-                            <p class="phone-number">9857022315</p>
-                            <p class="phone-number">info@gmail.com</p>
-                        </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news8.jpg" class="card-img" alt="News Image 2">
+                    <div class="card-bod">
+                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
                     </div>
-                    <div class="contact-card" style="height: 260px;">
-                        <img src="assets/martyr4.jpg" alt="Dinesh Thapa">
-                        <div class="contact-info">
-                            <h5>Dinesh Thapa</h5>
-                            <p>Vice-Principal</p>
-                            <p class="phone-number">9857022315</p>
-                            <p class="phone-number">info@gmail.com</p>
-                        </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news7.webp" class="card-img" alt="News Image 3">
+                    <div class="card-bod">
+                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <div class="container mt-4">
+        <!-- secondd row Cards -->
         <div class="row">
-            <!-- Left Section: Welcome Text -->
-            <div class="col-md-8">
-                <div class="welcome-section">
-                    <h1>Welcome!</h1>
-                    <h2>सहिद प्रतिष्ठान नेपाल विद्यालय</h2>
-                    <p>शहिद प्रतिष्ठान नेपाल एक राष्ट्रिय संस्था हो,
-                        जसले नेपालका शहीदहरूको सम्झना र सम्मान गर्नका लागि स्थापना गरिएको हो। यो प्रतिष्ठानले शहीदका
-                        परिवारलाई सहयोग, रत्न र सम्मान प्रदान गर्ने काम गर्छ। यसका मुख्य उद्देश्यमा शहीदहरूको योगदानलाई
-                        उजागर गर्नु, र तिनको सम्झनामा विभिन्न कार्यक्रम र गतिविधिहरू आयोजना गर्नु पर्छ। प्रतिष्ठानले
-                        शहीदहरूको इतिहास र तिनीहरूको बलिदानलाई महत्त्व दिन्छ, जसले नयाँ पुस्तालाई प्रेरित गर्ने काम
-                        गर्दछ।
-
-                        यस प्रतिष्ठानले विभिन्न समारोह, शैक्षिक कार्यक्रम, र सांस्कृतिक गतिविधिहरूमार्फत शहीदहरूको
-                        योगदानलाई जनतासम्म पुर्याउने प्रयास गर्दछ। नेपालमा शहीदहरूको महत्व र तिनको बलिदानको सम्झना
-                        गर्नका लागि शाहिद प्रतिष्ठानको भूमिका अत्यन्तै महत्त्वपूर्ण छ।
-                    </p>
-                    <p>शहिद प्रतिष्ठान नेपाल एक राष्ट्रिय संस्था हो,
-                        जसले नेपालका शहीदहरूको सम्झना र सम्मान गर्नका लागि स्थापना गरिएको हो। यो प्रतिष्ठानले शहीदका
-                        परिवारलाई सहयोग, रत्न र सम्मान प्रदान गर्ने काम गर्छ। यसका मुख्य उद्देश्यमा शहीदहरूको योगदानलाई
-                        उजागर गर्नु, र तिनको सम्झनामा विभिन्न कार्यक्रम र गतिविधिहरू आयोजना गर्नु पर्छ। प्रतिष्ठानले
-                        शहीदहरूको इतिहास र तिनीहरूको बलिदानलाई महत्त्व दिन्छ, जसले नयाँ पुस्तालाई प्रेरित गर्ने काम
-                        गर्दछ।
-
-                        यस प्रतिष्ठानले विभिन्न समारोह, शैक्षिक कार्यक्रम, र सांस्कृतिक गतिविधिहरूमार्फत शहीदहरूको
-                        योगदानलाई जनतासम्म पुर्याउने प्रयास गर्दछ। नेपालमा शहीदहरूको महत्व र तिनको बलिदानको सम्झना
-                        गर्नका लागि शाहिद प्रतिष्ठानको भूमिका अत्यन्तै महत्त्वपूर्ण छ।
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- Right Section: Academic Policies -->
-            <div class="col-md-4">
-                <div class="policies-section">
-                    <h3>Academic Policies :</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="policy-link">Admission Policies</a></li>
-                        <li><a href="#" class="policy-link">Scholarship Policy</a></li>
-                        <li><a href="#" class="policy-link">Hostel Policy, Rules & Regulations</a></li>
-                        <li><a href="#" class="policy-link">Transportation Policy</a></li>
-                    </ul>
-                </div>
-                <div class="contact-card" style="height: 260px; height: 47%;">
-                    <img src="assets/martyr4.jpg" alt="Dinesh Thapa">
-                    <div class="contact-info">
-                        <h5>Dinesh Thapa</h5>
-                        <p>IT Officer</p>
-                        <p class="phone-number">9857022315</p>
-                        <p>Kathmandu, Nepal</p>
-                        <p class="phone-number">info@gmail.com</p>
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news5.webp" class="card-img" alt="Halesi Tuwachung Municipality">
+                    <div class="card-bod">
+                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
+                            आयोजना अधुरे
+                        </h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
                     </div>
                 </div>
             </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news4.webp" class="card-img" alt="News Image 2">
+                    <div class="card-bod">
+                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news3.jpeg" class="card-img" alt="News Image 3">
+                    <div class="card-bod">
+                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
     <footer class="footer__section">
         <div class="custom-container">
             <nav class="footer__grid">
@@ -383,8 +290,7 @@
                         </li>
                         <li>
                             <p style="color: #fff;">वेवसाईटः <a href="mailto:apeksha.ghimire@softechfoundation.com"
-                                    style="text-decoration: none; color: rgb(255, 255, 255);">
-                                    https://www.sahidpratisthan.org.np
+                                    style="text-decoration: none; color: rgb(255, 255, 255);"> https://www.sahidpratisthan.org.np 
                                 </a>
                             </p>
                         </li>
@@ -418,7 +324,6 @@
             </nav>
         </div>
     </footer>
-
     <script>
         function toggleMenu() {
             const menu = document.querySelector('.menu');
