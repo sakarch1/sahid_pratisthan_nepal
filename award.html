@@ -65,6 +65,71 @@
         .gallery-container {
             margin-top: 20px;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 125%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+        }
+
+        /* Previous and Next buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+            color: #bbb;
+        }
     </style>
 </head>
 
@@ -190,37 +255,59 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="gallery-item">
-                        <img src="assets/aboutus.jpg" alt="Gallery Image 1" class="img-fluid rounded">
+                        <img src="assets/aboutus.jpg" alt="Gallery Image 1" class="img-fluid rounded" data-index="0"
+                            onclick="openModal(this)">
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="gallery-item">
-                        <img src="assets/aboutus.jpg" alt="Gallery Image 2" class="img-fluid rounded">
+                        <img src="assets/banner_sahid.jpg" alt="Gallery Image 2" class="img-fluid rounded" data-index="1"
+                            onclick="openModal(this)">
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="gallery-item">
-                        <img src="assets/aboutus.jpg" alt="Gallery Image 3" class="img-fluid rounded">
+                        <img src="assets/aboutus.jpg" alt="Gallery Image 3" class="img-fluid rounded" data-index="2"
+                            onclick="openModal(this)">
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="gallery-item">
-                        <img src="assets/coursel1.jpg" alt="Gallery Image 4" class="img-fluid rounded">
+                        <img src="assets/coursel1.jpg" alt="Gallery Image 4" class="img-fluid rounded" data-index="3"
+                            onclick="openModal(this)">
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="gallery-item">
-                        <img src="assets/coursel1.jpg" alt="Gallery Image 5" class="img-fluid rounded">
+                        <img src="assets/course3.jpg" alt="Gallery Image 5" class="img-fluid rounded" data-index="4"
+                            onclick="openModal(this)">
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="gallery-item">
-                        <img src="assets/coursel1.jpg" alt="Gallery Image 6" class="img-fluid rounded">
+                        <img src="assets/coursel1.jpg" alt="Gallery Image 6" class="img-fluid rounded" data-index="5"
+                            onclick="openModal(this)">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img class="modal-content" id="modalImage">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
 
     <footer class="footer__section">
         <div class="custom-container">
@@ -293,12 +380,16 @@
         </div>
     </footer>
 
+    <script src="modal.js"></script>
+
     <script>
         function toggleMenu() {
             const menu = document.querySelector('.menu');
             menu.classList.toggle('active');
         }
     </script>
+
+
 </body>
 
 </html>

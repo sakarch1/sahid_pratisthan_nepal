@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="shortcut icon" href="assets/flag.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -20,65 +20,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap"
         rel="stylesheet">
     <style>
-        .ontainer h1 {
-            text-align: center;
-            padding-top: 10px;
-            padding-left: 50px;
-            font-size: 35px;
-            font-weight: 600;
-            color: #2A8CBFff;
-        }
-
-        .ontent-bottom {
-            border-top: 1px solid #444;
-            /* Divider */
-            padding-top: 10px;
-        }
-
-        .cad {
-            border: none;
+        .card-box {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
-            background-color: #e8eef2;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 110px;
+            height: 57vh;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .cad:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        .card-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .cad img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin: 15px auto;
+        .card-box img {
+            width: 128px;
+            height: 135px;
+            border-radius: 50%;
+            margin-bottom: 15px;
         }
 
-        .cad-body h3 {
-            font-size: 20px;
-            color: #a51020;
+        .card-box .card-title {
+            font-size: 1.25em;
+            font-weight: bold;
+            color: #ff0000;
         }
 
-        .btn-outline-success {
-            background-color: #a51020;
-            color: white;
-            border-radius: 20px;
-            padding: 5px 20px;
+        .card-box .card-text {
+            font-size: 1em;
+            color: #1289b9;
         }
 
-        .btn-outline-success:hover {
-            background-color: #2A8CBFff;
-            color: white;
+        .card-box h5 {
+            font-size: 0.9em;
+            color: #000000;
         }
 
-        .cad-body h5 {
-            font-size: 14px;
-            color: #444;
-            font-weight: 400;
-        }
-
-        .row {
-            margin-bottom: 80px;
+        h1 {
+            font-size: 2em;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -106,7 +91,7 @@
 
         <div class="navbar-middle bg-white text-center py-2">
             <div class="container d-flex justify-content-between">
-                <img src="assets/flag.jpg" alt="Flag" class="navbar-flag">
+                <a href="index.html"><img src="assets/flag.jpg" alt="Flag" class="navbar-flag"></a>
                 <div class="ml-3">
                     <h2 style="color: #2A8CBFff;">सहिद प्रतिष्ठान नेपाल</h2>
                     <p class="mt-2 " style="color: #2A8CBFff;">कोटेश्वर-३२, काठमाण्डौं</p>
@@ -195,99 +180,110 @@
     </header>
 
     <!-- Sadharan section -->
-    <div class="ontainer mt-5">
+    <div class="container mt-5">
         <div class="text-center">
-            <h1>आजीवन सदस्य</h1>
+            <h1>साधारण सदस्य</h1>
         </div>
-        
+
         <div class="row">
             <!-- Card 1 -->
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Sagar Pandey">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सदस्य</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
                 </div>
             </div>
+
             <!-- Card 2 -->
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Nilhari Bastola">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सदस्य</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
                 </div>
             </div>
+
             <!-- Card 3 -->
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Karma Sherpa">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सदस्य</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
                 </div>
             </div>
+
             <!-- Card 4 -->
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Bishnu Prasad Lamsal">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सदस्य</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Sagar Pandey">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+
+            <!-- Card 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सदस्य</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Sagar Pandey">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+
+            <!-- Card 6 -->
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सदस्य</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Sagar Pandey">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+
+            <!-- Card 7 -->
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सदस्य</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="cad text-center">
-                    <img src="assets/martyr1.jpg" class="card-img img-fluid" alt="Sagar Pandey">
-                    <div class="cad-body">
-                        <h3 class="cad-title">अमृता दाहाल</h3>
-                        <p class="cad-text">अध्यक्ष</p>
+
+            <!-- Card 8 -->
+            <div class="col-md-3 mb-4">
+                <div class="card-box text-center">
+                    <img src="assets/sahid.jpg" class="card-img img-fluid rounded-circle" alt="sahid">
+                    <div class="card-body">
+                        <h3 class="card-title">लखन थापा मगर</h3>
+                        <p class="card-text">सहिद</p>
                         <h5>9810778899</h5>
                         <h5>info@gmail.com</h5>
                     </div>
@@ -343,7 +339,7 @@
                 <div class="footer__grid-nav">
                     <h3 class="menu__label" style="color: #fff;">QUICK LINKS</h3>
                     <ul class="link__menu">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">संगठनात्मक संरचना</a></li>
                         <li><a href="#">सदस्य</a></li>
                         <li><a href="#">गतिविधि</a></li>
@@ -356,10 +352,10 @@
                 <div class="footer__grid-nav">
                     <h3 class="menu__label" style="color: #fff;">OTHER LINKS</h3>
                     <ul class="link__menu">
-                        <li><a href="#">दस्तावेज</a></li>
+                        <li><a href="dastavej.html">दस्तावेज</a></li>
                         <li><a href="#">विद्यालय</a></li>
                         <li><a href="#">सूचना पाटी</a></li>
-                        <li><a href="#">सम्पर्क</a></li>
+                        <li><a href="contact.html">सम्पर्क</a></li>
                     </ul>
                 </div>
 

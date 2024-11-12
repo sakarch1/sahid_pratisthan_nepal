@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="shortcut icon" href="assets/flag.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -27,38 +27,48 @@
             color: #2A8CBFff;
         }
 
-        .about-section {
-            display: flex;
-            align-items: center;
-            background-color: #f8f9fa;
+        .profile-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            margin-bottom: 90px;
         }
 
-        .about-image img {
-            border-radius: 8px;
+        .profile-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #eee;
         }
 
-        .conten {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .conten p {
-            margin: 0;
-            padding: 4px 0;
-            font-weight: normal;
+        .profile-name {
+            font-weight: bold;
             font-size: 18px;
+            color: #ff0000;
+            margin: 15px 0 5px;
         }
 
-        .boox {
-            background: #ffffff;
-            margin: 0 auto;
+        .profile-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1289b9;
+            margin-bottom: 15px;
         }
 
-        strong {
-            color: #2A8CBFff;
+        .view-profile-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .view-profile-btn i {
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -180,83 +190,42 @@
             <h1>सहिद विवरण</h1>
         </div>
 
-        <!-- First Box -->
-        <div class="about-section boox mb-4">
-            <div class="about-image">
-                <img src="assets/martyr1.jpg" alt="Martyr Image" width="200">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="profile-card">
+                    <img src="assets/martyr1.jpg" alt="dharma" class="profile-image">
+                    <p class="profile-name">धर्मभक्त आचार्य</p>
+                    <p class="profile-title">सहिद</p>
+                    <a href="dharma.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+                </div>
             </div>
-            <div class="conten ms-4">
-                <p><strong>नाम:</strong> धर्मभक्त आचार्य</p>
-                <p><strong>जन्म मिति:</strong> ९ असोज, १९६६</p>
-                <p><strong>जन्मस्थान:</strong> काठमाडौं, नेपाल</p>
-                <p><strong>शहादत मिति:</strong> माघ ११, १९९७</p>
-                <p><strong>योगदान:</strong> नेपाली लोकतान्त्रिक आन्दोलनमा चार बहादुर छोराले आफ्नो जीवन बलिदान दिए ।
-                    जनताको अधिकार र हितका लागि भएको लोकतान्त्रिक आन्दोलनमा उनीहरू अमर शहीद बने । राणा प्रधानमन्त्रीहरूले
-                    शाह राजाहरूलाई पनि कब्जामा लिएका थिए। राणा प्रधानमन्त्रीले शाह राजालाई प्रभाव पारेर राजाको नाममा
-                    <br>
-                    शासन गर्थे ।
-                </p>
-                <a href="dharma.html" class="btn btn-primary">थप पढ्नुहोस्</a>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="profile-card">
+                    <img src="assets/martyr2.jpeg" alt="dashrath" class="profile-image">
+                    <p class="profile-name">दशरथ चन्द</p>
+                    <p class="profile-title">सहिद</p>
+                    <a href="dashrath.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+                </div>
             </div>
-        </div>
-
-        <!-- Second Box -->
-        <div class="about-section boox mb-4">
-            <div class="about-image">
-                <img src="assets/martyr2.jpeg" alt="Martyr Image" width="200">
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="profile-card">
+                    <img src="assets/martyr3.jpeg" alt="gangalal" class="profile-image">
+                    <p class="profile-name">गङ्गालाल श्रेष्ठ</p>
+                    <p class="profile-title">सहिद</p>
+                    <a href="ganga.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+                </div>
             </div>
-            <div class="conten ms-4">
-                <p><strong>नाम:</strong> दशरथ चन्द</p>
-                <p><strong>जन्म मिति:</strong> असार १७, १९६०</p>
-                <p><strong>जन्मस्थान:</strong> बैतडी, नेपाल</p>
-                <p><strong>शहादत मिति:</strong> माघ १२, १९९७</p>
-                <p><strong>योगदान:</strong> नेपाली लोकतान्त्रिक आन्दोलनमा चार बहादुर छोराले आफ्नो जीवन बलिदान दिए ।
-                    जनताको अधिकार र हितका लागि भएको लोकतान्त्रिक आन्दोलनमा उनीहरू अमर शहीद बने । राणा प्रधानमन्त्रीहरूले
-                    शाह राजाहरूलाई पनि कब्जामा लिएका थिए। राणा प्रधानमन्त्रीले शाह राजालाई प्रभाव पारेर राजाको नाममा
-                    <br>
-                    शासन गर्थे ।
-                </p>
-                <a href="dashrath.html" class="btn btn-primary">थप पढ्नुहोस्</a>
-            </div>
-        </div>
-
-        <!-- Third Box -->
-        <div class="about-section boox mb-4">
-            <div class="about-image">
-                <img src="assets/martyr3.jpeg" alt="Martyr Image" width="200">
-            </div>
-            <div class="conten ms-4">
-                <p><strong>नाम:</strong> गङ्गालाल श्रेष्ठ</p>
-                <p><strong>जन्म मिति:</strong> १९७६</p>
-                <p><strong>जन्मस्थान:</strong> रामेछाप, नेपाल</p>
-                <p><strong>शहादत मिति:</strong> माघ १५, १९९७</p>
-                <p><strong>योगदान:</strong> नेपाली लोकतान्त्रिक आन्दोलनमा चार बहादुर छोराले आफ्नो जीवन बलिदान दिए ।
-                    जनताको अधिकार र हितका लागि भएको लोकतान्त्रिक आन्दोलनमा उनीहरू अमर शहीद बने । राणा प्रधानमन्त्रीहरूले
-                    शाह राजाहरूलाई पनि कब्जामा लिएका थिए। राणा प्रधानमन्त्रीले शाह राजालाई प्रभाव पारेर राजाको नाममा
-                    <br>
-                    शासन गर्थे ।
-                </p>
-                <a href="ganga.html" class="btn btn-primary">थप पढ्नुहोस्</a>
-            </div>
-        </div>
-
-        <!-- Fourth Box -->
-        <div class="about-section boox mb-4">
-            <div class="about-image">
-                <img src="assets/martyr4.jpg" alt="Martyr Image" width="200">
-            </div>
-            <div class="conten ms-4">
-                <p><strong>नाम:</strong> शुक्रराज शास्त्री</p>
-                <p><strong>जन्म मिति:</strong> १९५१</p>
-                <p><strong>जन्मस्थान:</strong> वराणसी, भारत</p>
-                <p><strong>शहादत मिति:</strong> माघ ११, १९९७</p>
-                <p><strong>योगदान:</strong> नेपाली लोकतान्त्रिक आन्दोलनमा चार बहादुर छोराले आफ्नो जीवन बलिदान दिए ।
-                    जनताको अधिकार र हितका लागि भएको लोकतान्त्रिक आन्दोलनमा उनीहरू अमर शहीद बने । राणा प्रधानमन्त्रीहरूले
-                    शाह राजाहरूलाई पनि कब्जामा लिएका थिए। राणा प्रधानमन्त्रीले शाह राजालाई प्रभाव पारेर राजाको नाममा
-                    <br>
-                    शासन गर्थे ।
-                </p>
-                <a href="shukra.html" class="btn btn-primary">थप पढ्नुहोस्</a>
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="profile-card">
+                    <img src="assets/martyr4.jpg" alt="shukra" class="profile-image">
+                    <p class="profile-name">शुक्रराज शास्त्री</p>
+                    <p class="profile-title">सहिद</p>
+                    <a href="shukra.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+                </div>
             </div>
         </div>
     </div>
