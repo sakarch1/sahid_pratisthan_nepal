@@ -26,7 +26,8 @@
         height: auto;
     }
 
-    .card-title, .card-text {
+    .card-title,
+    .card-text {
         font-size: 14px;
     }
 
@@ -42,7 +43,7 @@
     .footer__section {
         padding: 50px 0;
     }
-    
+
     .footer__grid {
         flex-direction: column;
         align-items: center;
@@ -52,7 +53,7 @@
     .button-container .btn-group .btn {
         font-size: 14px;
     }
-    
+
     .pdf-image {
         height: 100px;
     }
@@ -89,6 +90,10 @@
         height: 100px;
     }
 
+    .profile-page .an-user {
+        margin-top: 40px;
+    }
+
     .form-inline input {
         width: 180px;
     }
@@ -106,7 +111,8 @@
         height: 70vh;
     }
 
-    .card-title, .card-text {
+    .card-title,
+    .card-text {
         font-size: 15px;
     }
 
@@ -173,9 +179,16 @@
         padding: 20px;
         overflow-y: auto;
     }
-    
+
     .main-content {
-        margin-left: 25%; 
+        margin-left: 25%;
         padding: 20px;
+    }
+}
+
+@media (min-width: 480px) {
+    .profile-page .an-user {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

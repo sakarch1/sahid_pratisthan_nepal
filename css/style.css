@@ -324,7 +324,7 @@ body {
 .line {
     flex: 1;
     height: 1px;
-    background-color: #a51020;
+    background-color: #ff0000;
     margin-top: 50px;
 }
 
@@ -387,7 +387,7 @@ body {
 .car-title {
     margin-top: 20px;
     font-size: 16px;
-    color: #eb9515;
+    color: #ff0000;
     margin-left: 5px;
 }
 
@@ -398,6 +398,7 @@ body {
 }
 
 .card-footer .reporter {
+    color: #1289b9;
     font-weight: bold;
 }
 
@@ -533,4 +534,81 @@ body {
 
 .btn-primary:hover {
     background-color: #2A8CBFff;
+}
+
+.contact-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section h1 {
+    color: #ff0000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.map-location {
+    margin-top: 90px;
+    color: #ff0000;
+}
+
+.map-location iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    margin: 20px auto;
+    border: 0;
+}
+
+.inquiry-form {
+    margin-top: 50px;
+}
+
+.inquiry-form h2 {
+    color: #ff0000;
+}
+
+.inquiry-form form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #1289b9;
 }
