@@ -20,16 +20,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap"
         rel="stylesheet">
     <style>
-        .ontainer h1 {
-            text-align: center;
-            padding-top: 10px;
-            padding-left: 50px;
-            font-size: 35px;
-            font-weight: 600;
+        .contain h1 {
+            font-size: 36px;
+            font-weight: bold;
             color: #2A8CBFff;
         }
-        .ontainer {
-            margin-bottom: 50px;
+
+        .btn-custom {
+            margin-top: 50px;
+            margin-right: 900px;
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .btn-gallery {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+        }
+
+        .btn-gallery:hover {
+            background-color: #ff0000;
+        }
+
+        .btn-video {
+            background-color: white;
+            color: #ff0000;
+            border: 2px solid #ff0000;
+        }
+
+        .btn-video:hover {
+            background-color: #f7f7f7;
+        }
+
+        .profile-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin: 10px;
+            margin-bottom: 90px;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #eee;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            font-size: 22px;
+            color: #ff0000;
+            margin: 15px 0 5px;
+        }
+
+        .profile-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1289b9;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .view-profile-btn {
+            background-color: #ff0000;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .view-profile-btn i {
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -99,13 +167,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="dastavej.html">दस्तावेज</a>
+                            <a class="nav-link text-white" href="dastavej.html" onclick="showGallery()">दस्तावेज</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown">गतिविधि</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="martyrs.html">सहिद विवरण</a></li>
+                                <li><a class="dropdown-item" href="programme.html">कार्यक्रम</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -145,67 +213,106 @@
         </nav>
     </header>
 
-    <div class="ontainer mt-5">
-        <div class="text-center">
-            <h1>दस्तावेज</h1>
+
+    <!-- Buttons -->
+    <div class="text-center my-4">
+        <button class="btn btn-custom btn-gallery me-2" onclick="showGallery()">ग्यालेरी</button>
+        <button class="btn btn-custom btn-video" onclick="showVideos()">भिडियो</button>
+    </div>
+
+    <!-- Gallery Section -->
+
+    <div id="gallery" class="contain mt-5">
+        <div class="text-center mb-5">
+            <h1>सहिद विवरण</h1>
         </div>
+
         <div class="row">
+            <!-- Card 1 -->
             <div class="col-md-3">
-                <div class="cardy pdf-card">
-                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
-                            alt="Document Image" class="card-img-top pdf-image"></a>
-                    <div class="card-bodies text-center">
-                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
-                        <p class="card-texts">२२ जेठ, २०७९</p>
-                        <a href="assets/Working_Guideline.pdf" target="_blank" download class="btn download-btn">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                <div class="profile-card">
+                    <img src="assets/martyr1.jpg" alt="dharma" class="profile-image">
+                    <p class="profile-name">धर्मभक्त आचार्य</p>
+                    <p class="profile-title">जन्ममिति: १९६६ असोज ९ गते</p>
+                    <p class="profile-title">सहादगत मिति: १९९७ माघ ११ गते</p>
+                    <a href="dharma.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
                 </div>
             </div>
-
+            <!-- Card 2 -->
             <div class="col-md-3">
-                <div class="cardy pdf-card">
-                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
-                            alt="Document Image" class="card-img-top pdf-image"></a>
-                    <div class="card-bodies text-center">
-                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
-                        <p class="card-texts">२२ जेठ, २०७९</p>
-                        <a href="assets/Working_Guideline.pdf" target="_blank" download class="btn download-btn">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                <div class="profile-card">
+                    <img src="assets/martyr2.jpeg" alt="dashrath" class="profile-image">
+                    <p class="profile-name">दशरथ चन्द</p>
+                    <p class="profile-title">जन्ममिति: १९६० असोज १७ गते</p>
+                    <p class="profile-title">सहादगत मिति: १९९७ माघ १२ गते</p>
+                    <a href="dashrath.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
                 </div>
             </div>
-
+            <!-- Card 3 -->
             <div class="col-md-3">
-                <div class="cardy pdf-card">
-                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
-                            alt="Document Image" class="card-img-top pdf-image"></a>
-                    <div class="card-bodies text-center">
-                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
-                        <p class="card-texts">२२ जेठ, २०७९</p>
-                        <a href="assets/Working_Guideline.pdf" target="_blank" download class="btn download-btn">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                <div class="profile-card">
+                    <img src="assets/martyr3.jpeg" alt="gangalal" class="profile-image">
+                    <p class="profile-name">गङ्गालाल श्रेष्ठ</p>
+                    <p class="profile-title">जन्ममिति: १९७५</p>
+                    <p class="profile-title">सहादगत मिति: १९९७ माघ १५ गते</p>
+                    <a href="ganga.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
                 </div>
             </div>
-
+            <!-- Card 4 -->
             <div class="col-md-3">
-                <div class="cardy pdf-card">
-                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
-                            alt="Document Image" class="card-img-top pdf-image"></a>
-                    <div class="card-bodies text-center">
-                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
-                        <p class="card-texts">२२ जेठ, २०७९</p>
-                        <a href="assets/Working_Guideline.pdf" target="_blank" download class="btn download-btn">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
+                <div class="profile-card">
+                    <img src="assets/martyr4.jpg" alt="shukra" class="profile-image">
+                    <p class="profile-name">शुक्रराज शास्त्री</p>
+                    <p class="profile-title">जन्ममिति: १९५०</p>
+                    <p class="profile-title">सहादगत मिति: १९९७ माघ १० गते</p>
+                    <a href="shukra.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Video Section -->
+    <div class="contain my-5">
+        <div class="text-center">
+            <h1 style="text-align: center;">भिडियो ग्यालरी</h1>
+        </div>
+
+        <!-- Portfolio grid -->
+        <div class="contain gallery-container">
+            <div class="row justify-content-center" style="width: 100%; margin-left: 0px; margin-top: 60px;">
+                <!-- Gallery Item 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="ar recent-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/nb3mfxSwvuo?si=vTIlmN5Wv71SfIpb" class="card-img"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="ar recent-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/nb3mfxSwvuo?si=vTIlmN5Wv71SfIpb" class="card-img"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="ar recent-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/nb3mfxSwvuo?si=vTIlmN5Wv71SfIpb" class="card-img"
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     <footer class="footer__section">
@@ -283,6 +390,18 @@
         function toggleMenu() {
             const menu = document.querySelector('.menu');
             menu.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+        function showGallery() {
+            document.getElementById("gallery").style.display = "block";
+            document.getElementById("videos").style.display = "none";
+        }
+
+        function showVideos() {
+            document.getElementById("gallery").style.display = "none";
+            document.getElementById("videos").style.display = "block";
         }
     </script>
 </body>

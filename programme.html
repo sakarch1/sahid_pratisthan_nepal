@@ -26,51 +26,6 @@
             font-weight: bold;
             color: #2A8CBFff;
         }
-
-        .profile-card {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            text-align: center;
-            padding: 20px;
-            margin: 10px;
-            margin-bottom: 90px;
-        }
-
-        .profile-image {
-            width: 100%;
-            height: auto;
-            border-bottom: 2px solid #eee;
-        }
-
-        .profile-name {
-            font-weight: bold;
-            font-size: 22px;
-            color: #ff0000;
-            margin: 15px 0 5px;
-        }
-
-        .profile-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: #1289b9;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-
-        .view-profile-btn {
-            background-color: #ff0000;
-            color: white;
-            padding: 6px 15px;
-            border-radius: 15px;
-            font-size: 14px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .view-profile-btn i {
-            margin-left: 5px;
-        }
     </style>
 </head>
 
@@ -145,7 +100,7 @@
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown">गतिविधि</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="martyrs.html">सहिद विवरण</a></li>
+                                <li><a class="dropdown-item" href="programme.html" onclick="showGallery()">कार्यक्रम</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -185,55 +140,96 @@
         </nav>
     </header>
 
-
     <div class="contain mt-5">
         <div class="text-center mb-5">
-            <h1>सहिद विवरण</h1>
+            <h1>कार्यक्रम</h1>
         </div>
 
-        <div class="row">
+
+        <div class="row" ms -5>
             <!-- Card 1 -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr1.jpg" alt="dharma" class="profile-image">
-                    <p class="profile-name">धर्मभक्त आचार्य</p>
-                    <p class="profile-title">जन्ममिति: १९६६ असोज ९ गते</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ ११ गते</p>
-                    <a href="dharma.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news.jpg" class="card-img" alt="Halesi Tuwachung Municipality">
+                    <div class="card-bod">
+                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
+                            आयोजना अधुरे</h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr2.jpeg" alt="dashrath" class="profile-image">
-                    <p class="profile-name">दशरथ चन्द</p>
-                    <p class="profile-title">जन्ममिति: १९६० असोज १७ गते</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ १२ गते</p>
-                    <a href="dashrath.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news.jpg" class="card-img" alt="News Image 2">
+                    <div class="card-bod">
+                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
+                    </div>
+                    <div class="line" style="margin-top: 39px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr3.jpeg" alt="gangalal" class="profile-image">
-                    <p class="profile-name">गङ्गालाल श्रेष्ठ</p>
-                    <p class="profile-title">जन्ममिति: १९७५</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ १५ गते</p>
-                    <a href="ganga.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news.jpg" class="card-img" alt="News Image 3">
+                    <div class="card-bod">
+                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
                 </div>
             </div>
             <!-- Card 4 -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr4.jpg" alt="shukra" class="profile-image">
-                    <p class="profile-name">शुक्रराज शास्त्री</p>
-                    <p class="profile-title">जन्ममिति: १९५०</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ १० गते</p>
-                    <a href="shukra.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news.jpg" class="card-img" alt="Halesi Tuwachung Municipality">
+                    <div class="card-bod">
+                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
+                            आयोजना अधुरे</h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news.jpg" class="card-img" alt="News Image 2">
+                    <div class="card-bod">
+                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
+                    </div>
+                    <div class="line" style="margin-top: 39px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-3">
+                <div class="car h-100">
+                    <img src="assets/news.jpg" class="card-img" alt="News Image 3">
+                    <div class="card-bod">
+                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
+                    </div>
+                    <div class="line" style="margin-top: 20px;"></div>
+                    <div class="card-footer text-muted">
+                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <footer class="footer__section">
@@ -251,16 +247,19 @@
                     <ul class="about__details" style="margin-top: 30px;">
 
                         <li>
-                            <p style="color: #fff;">कार्यालयः काठमाण्डौं महानगरपालिका -३२,
+                            <p style="color: #fff;">कार्यालयः काठमाण्डौं महानगरपालिका
+                                -३२,
                             </p>
                         </li>
                         <li>
-                            <p style="color: #fff;">महादेवस्थान मार्ग, कोटेश्वर, काठमाण्डौं, नेपाल
+                            <p style="color: #fff;">महादेवस्थान मार्ग, कोटेश्वर,
+                                काठमाण्डौं, नेपाल
                             </p>
                         </li>
                         <li>
                             <p style="color: #fff;">फोन: <a href="tel:०१ ४६१२२९०"
-                                    style="text-decoration: none; color: rgb(255, 255, 255);"> +९७७ १ ५१७२७०९
+                                    style="text-decoration: none; color: rgb(255, 255, 255);">
+                                    +९७७ १ ५१७२७०९
                                 </a></p>
                         </li>
                         <li>
