@@ -26,6 +26,37 @@
             font-weight: bold;
             color: #2A8CBFff;
         }
+
+        .crd {
+            overflow: hidden;
+        }
+
+        .crd-img-top {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .crd-date {
+            font-size: 14px;
+            color: #1c1ca1;
+            background-color: gainsboro;
+        }
+
+        .crd-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .crd:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease-in-out;
+        }
+
+        .crd:hover .crd-title {
+            color: #dc3545;
+            /* Highlight title on hover */
+        }
     </style>
 </head>
 
@@ -100,7 +131,8 @@
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown">गतिविधि</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="programme.html" onclick="showGallery()">कार्यक्रम</a></li>
+                                <li><a class="dropdown-item" href="programme.html">कार्यक्रम</a></li>
+                                <li><a class="dropdown-item" href="samachar.html">समाचार</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -141,96 +173,97 @@
     </header>
 
     <div class="contain mt-5">
-        <div class="text-center mb-5">
-            <h1>कार्यक्रम</h1>
+        <div class="line-container">
+
+            <div class="line" style="border: 1px solid #ff0000;"></div>
+
+            <div class="box">कार्यक्रम</div>
+            <!-- Line after the box -->
+            <div class="line" style="border: 1px solid #ff0000;"></div>
         </div>
 
-
-        <div class="row" ms -5>
+        <div class="row m-auto g-5" style="width: 100%; padding-bottom: 80px;">
             <!-- Card 1 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news.jpg" class="card-img" alt="Halesi Tuwachung Municipality">
-                    <div class="card-bod">
-                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
-                            आयोजना अधुरे</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
                     </div>
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news.jpg" class="card-img" alt="News Image 2">
-                    <div class="card-bod">
-                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
-                    </div>
-                    <div class="line" style="margin-top: 39px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
                     </div>
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news.jpg" class="card-img" alt="News Image 3">
-                    <div class="card-bod">
-                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Ride Sharing">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            राइड शेयरिङ एपले आफूखुसी भाडा उठाएपछि नियमन गर्न तम्सियो ...
+                        </h5>
                     </div>
                 </div>
             </div>
             <!-- Card 4 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news.jpg" class="card-img" alt="Halesi Tuwachung Municipality">
-                    <div class="card-bod">
-                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
-                            आयोजना अधुरे</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
                     </div>
                 </div>
             </div>
             <!-- Card 5 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news.jpg" class="card-img" alt="News Image 2">
-                    <div class="card-bod">
-                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
-                    </div>
-                    <div class="line" style="margin-top: 39px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
                     </div>
                 </div>
             </div>
             <!-- Card 6 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news.jpg" class="card-img" alt="News Image 3">
-                    <div class="card-bod">
-                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-
-
 
     <footer class="footer__section">
         <div class="custom-container">

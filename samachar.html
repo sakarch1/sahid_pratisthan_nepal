@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="shortcut icon" href="assets/flag.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -20,6 +20,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap"
         rel="stylesheet">
 
+    <style>
+        .contain h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2A8CBFff;
+        }
+
+        .crd {
+            overflow: hidden;
+        }
+
+        .crd-img-top {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .crd-date {
+            font-size: 14px;
+            color: #1c1ca1;
+            background-color: gainsboro;
+        }
+
+        .crd-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .crd:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease-in-out;
+        }
+
+        .crd:hover .crd-title {
+            color: #dc3545;
+            /* Highlight title on hover */
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +83,7 @@
 
         <div class="navbar-middle bg-white text-center py-2">
             <div class="container d-flex justify-content-between">
-                <img src="assets/flag.jpg" alt="Flag" class="navbar-flag">
+                <a href="index.html"><img src="assets/flag.jpg" alt="Flag" class="navbar-flag"></a>
                 <div class="ml-3">
                     <h2 style="color: #2A8CBFff;">सहिद प्रतिष्ठान नेपाल</h2>
                     <p class="mt-2 " style="color: #2A8CBFff;">कोटेश्वर-३२, काठमाण्डौं</p>
@@ -134,123 +172,97 @@
         </nav>
     </header>
 
-    <div class="line-container">
+    <div class="contain mt-5">
+        <div class="line-container">
 
-        <div class="line"></div>
+            <div class="line" style="border: 1px solid #ff0000;"></div>
 
-        <div class="box">ताप्लेजुङ</div>
-        <!-- Line after the box -->
-        <div class="line"></div>
-    </div>
-
-    <div class="container my-5">
-
-        <!-- Navigation Tabs -->
-        <div class="button-container ms-5">
-            <div class="btn-group" role="group">
-                <a href="fungling.html" class="btn btn-outline-secondary">फुङ्लिङ नगरपालिका</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="aathrai.html" class="btn btn-outline-secondary">आठराई त्रिवेणी गाउँपालिका</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="sidingwa.html" class="btn btn-outline-secondary">सिडिङवा गाउँपालिका</a>
-            </div>
-            <div class="btn-group" role="group">
-                <a href="fakta.html" class="btn btn-outline-secondary">फाक्ताङलुङ गाउँपालिका</a>
-            </div>
+            <div class="box">समाचार</div>
+            <!-- Line after the box -->
+            <div class="line" style="border: 1px solid #ff0000;"></div>
         </div>
 
-        <!-- News Cards -->
-        <div class="row" ms -5>
+        <div class="row m-auto g-5" style="width: 100%; padding-bottom: 80px;">
             <!-- Card 1 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news9.jpg" class="card-img" alt="Halesi Tuwachung Municipality">
-                    <div class="card-bod">
-                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
-                            आयोजना अधुरे
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
                         </h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
                     </div>
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news8.jpg" class="card-img" alt="News Image 2">
-                    <div class="card-bod">
-                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news7.webp" class="card-img" alt="News Image 3">
-                    <div class="card-bod">
-                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- secondd row Cards -->
-        <div class="row">
-            <!-- Card 1 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news5.webp" class="card-img" alt="Halesi Tuwachung Municipality">
-                    <div class="card-bod">
-                        <h5 class="car-title">महादेव खिन्तिले लिपको ठेक्का ५ बर्षदेखि अलपत्र, हलेसी ‘पम्पिङ’ खानेपानी
-                            आयोजना अधुरे
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
                         </h5>
                     </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news4.webp" class="card-img" alt="News Image 2">
-                    <div class="card-bod">
-                        <h5 class="car-title">कात्रो लिएर अनसन बस्नु : निवर्तमान मुख्यमन्त्री कार्की</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
-                    </div>
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="col-md-4 mb-3">
-                <div class="car h-100">
-                    <img src="assets/news3.jpeg" class="card-img" alt="News Image 3">
-                    <div class="card-bod">
-                        <h5 class="car-title">दक्षिण एशियाकै दोश्रो ठूला राधाकृष्ण रथयात्रा आज, कोशी प्रदेश बिदा</h5>
-                    </div>
-                    <div class="line" style="margin-top: 20px;"></div>
-                    <div class="card-footer text-muted">
-                        <span class="reporter">सहिद प्रतिष्ठान नेपाल | भदौ २३, २०८०</span>
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Ride Sharing">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            राइड शेयरिङ एपले आफूखुसी भाडा उठाएपछि नियमन गर्न तम्सियो ...
+                        </h5>
                     </div>
                 </div>
             </div>
-
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="crd shadow-sm border-0">
+                    <img src="assets/news2.jpg" class="crd-img-top" alt="Minister Oath Ceremony">
+                    <div class="crd-body text-center">
+                        <p class="crd-date mb-1">२०८१ मंसिर ५ गते बुधबार</p>
+                        <div class="line" style="margin-top: -5px; margin-bottom: 10px;"></div>
+                        <h5 class="crd-title text-danger">
+                            नवनियुक्त मन्त्रीहरुले लिए पद तथा गोपनीयताको शपथ
+                        </h5>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <footer class="footer__section">
@@ -268,16 +280,19 @@
                     <ul class="about__details" style="margin-top: 30px;">
 
                         <li>
-                            <p style="color: #fff;">कार्यालयः काठमाण्डौं महानगरपालिका -३२,
+                            <p style="color: #fff;">कार्यालयः काठमाण्डौं महानगरपालिका
+                                -३२,
                             </p>
                         </li>
                         <li>
-                            <p style="color: #fff;">महादेवस्थान मार्ग, कोटेश्वर, काठमाण्डौं, नेपाल
+                            <p style="color: #fff;">महादेवस्थान मार्ग, कोटेश्वर,
+                                काठमाण्डौं, नेपाल
                             </p>
                         </li>
                         <li>
                             <p style="color: #fff;">फोन: <a href="tel:०१ ४६१२२९०"
-                                    style="text-decoration: none; color: rgb(255, 255, 255);"> +९७७ १ ५१७२७०९
+                                    style="text-decoration: none; color: rgb(255, 255, 255);">
+                                    +९७७ १ ५१७२७०९
                                 </a></p>
                         </li>
                         <li>
@@ -287,9 +302,9 @@
                             </p>
                         </li>
                         <li>
-                            <p style="color: #fff;">वेवसाईटः <a href="mailto:apeksha.ghimire@softechfoundation.com"
+                            <p style="color: #fff;">वेवसाईटः <a href="https://www.shahidpratisthan.org.np"
                                     style="text-decoration: none; color: rgb(255, 255, 255);">
-                                    https://www.sahidpratisthan.org.np
+                                    https://www.shahidpratisthan.org.np
                                 </a>
                             </p>
                         </li>
@@ -300,7 +315,7 @@
                 <div class="footer__grid-nav">
                     <h3 class="menu__label" style="color: #fff;">QUICK LINKS</h3>
                     <ul class="link__menu">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">संगठनात्मक संरचना</a></li>
                         <li><a href="#">सदस्य</a></li>
                         <li><a href="#">गतिविधि</a></li>
@@ -313,22 +328,24 @@
                 <div class="footer__grid-nav">
                     <h3 class="menu__label" style="color: #fff;">OTHER LINKS</h3>
                     <ul class="link__menu">
-                        <li><a href="#">दस्तावेज</a></li>
+                        <li><a href="dastavej.html">दस्तावेज</a></li>
                         <li><a href="#">विद्यालय</a></li>
                         <li><a href="#">सूचना पाटी</a></li>
-                        <li><a href="#">सम्पर्क</a></li>
+                        <li><a href="contact.html">सम्पर्क</a></li>
                     </ul>
                 </div>
 
             </nav>
         </div>
     </footer>
+
     <script>
         function toggleMenu() {
             const menu = document.querySelector('.menu');
             menu.classList.toggle('active');
         }
     </script>
+
 </body>
 
 </html>

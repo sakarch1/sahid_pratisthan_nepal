@@ -174,6 +174,7 @@
                                 data-bs-toggle="dropdown">गतिविधि</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="programme.html">कार्यक्रम</a></li>
+                                <li><a class="dropdown-item" href="samachar.html">समाचार</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -214,105 +215,75 @@
     </header>
 
 
-    <!-- Buttons -->
-    <div class="text-center my-4">
-        <button class="btn btn-custom btn-gallery me-2" onclick="showGallery()">ग्यालेरी</button>
-        <button class="btn btn-custom btn-video" onclick="showVideos()">भिडियो</button>
-    </div>
+    <!-- Dastavej section -->
 
-    <!-- Gallery Section -->
+    <div class="containers my-5">
+        <div class="line-container">
 
-    <div id="gallery" class="contain mt-5">
-        <div class="text-center mb-5">
-            <h1>सहिद विवरण</h1>
+            <div class="line" style="border: 1px solid #ff0000;"></div>
+
+            <div class="box">दस्तावेज</div>
+            <!-- Line after the box -->
+            <div class="line" style="border: 1px solid #ff0000;"></div>
         </div>
-
         <div class="row">
-            <!-- Card 1 -->
             <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr1.jpg" alt="dharma" class="profile-image">
-                    <p class="profile-name">धर्मभक्त आचार्य</p>
-                    <p class="profile-title">जन्ममिति: १९६६ असोज ९ गते</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ ११ गते</p>
-                    <a href="dharma.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr2.jpeg" alt="dashrath" class="profile-image">
-                    <p class="profile-name">दशरथ चन्द</p>
-                    <p class="profile-title">जन्ममिति: १९६० असोज १७ गते</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ १२ गते</p>
-                    <a href="dashrath.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr3.jpeg" alt="gangalal" class="profile-image">
-                    <p class="profile-name">गङ्गालाल श्रेष्ठ</p>
-                    <p class="profile-title">जन्ममिति: १९७५</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ १५ गते</p>
-                    <a href="ganga.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <img src="assets/martyr4.jpg" alt="shukra" class="profile-image">
-                    <p class="profile-name">शुक्रराज शास्त्री</p>
-                    <p class="profile-title">जन्ममिति: १९५०</p>
-                    <p class="profile-title">सहादगत मिति: १९९७ माघ १० गते</p>
-                    <a href="shukra.html" class="view-profile-btn">थप पढ्नुहोस् <i class="fas fa-eye"></i></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Video Section -->
-    <div class="contain my-5">
-        <div class="text-center">
-            <h1 style="text-align: center;">भिडियो ग्यालरी</h1>
-        </div>
-
-        <!-- Portfolio grid -->
-        <div class="contain gallery-container">
-            <div class="row justify-content-center" style="width: 100%; margin-left: 0px; margin-top: 60px;">
-                <!-- Gallery Item 1 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="ar recent-card">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/nb3mfxSwvuo?si=vTIlmN5Wv71SfIpb" class="card-img"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="ar recent-card">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/nb3mfxSwvuo?si=vTIlmN5Wv71SfIpb" class="card-img"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="ar recent-card">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/nb3mfxSwvuo?si=vTIlmN5Wv71SfIpb" class="card-img"
-                                allowfullscreen></iframe>
-                        </div>
+                <div class="cardy pdf-card">
+                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
+                            alt="Document Image" class="card-img-top pdf-image"></a>
+                    <div class="card-bodies text-center">
+                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
+                        <p class="card-texts">२२ जेठ, २०७९</p>
+                        <a href="assets/Working_Guideline.pdf" download class="btn download-btn">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="col-md-3">
+                <div class="cardy pdf-card">
+                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
+                            alt="Document Image" class="card-img-top pdf-image"></a>
+                    <div class="card-bodies text-center">
+                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
+                        <p class="card-texts">२२ जेठ, २०७९</p>
+                        <a href="assets/Working_Guideline.pdf" download class="btn download-btn">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="cardy pdf-card">
+                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
+                            alt="Document Image" class="card-img-top pdf-image"></a>
+                    <div class="card-bodies text-center">
+                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
+                        <p class="card-texts">२२ जेठ, २०७९</p>
+                        <a href="assets/Working_Guideline.pdf" download class="btn download-btn">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="cardy pdf-card">
+                    <a href="assets/Working_Guideline.pdf" target="_blank"><img src="assets/document.jpg"
+                            alt="Document Image" class="card-img-top pdf-image"></a>
+                    <div class="card-bodies text-center">
+                        <h5 class="card-titles">शिक्षण कार्यविधि</h5>
+                        <p class="card-texts">२२ जेठ, २०७९</p>
+                        <a href="assets/Working_Guideline.pdf" download class="btn download-btn">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <footer class="footer__section">

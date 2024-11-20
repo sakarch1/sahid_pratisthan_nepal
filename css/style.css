@@ -172,7 +172,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     width: 109%;
-    height: 50vh;
+    /* height: 50vh; */
     border: 1px solid rgb(255, 226, 226);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
@@ -233,15 +233,44 @@ body {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+    .card-img-top {
+        width: 95%;
+        height: 150px;
+    }
 
-    .card-title,
+    .card-title {
+        font-size: 15px;
+    }
+
     .card-text {
+        font-size: 12px;
+    }
+
+    .cards {
+        margin: 20px auto;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        width: 100%;
+        height: 130px;
+    }
+
+    .card-title {
         font-size: 14px;
     }
 
-    .card-img-top {
-        height: 150px;
+    .card-text {
+        font-size: 11px;
+    }
+
+    .cards {
+        margin: 15px auto;
+        padding: 10px;
     }
 }
 
